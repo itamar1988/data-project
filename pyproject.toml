@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "data-project"
+version = "0.1.0"
+description = ""
+authors = ["Itamar Nascimento"]
+license = "GNU"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.2"
+pytest-cov = "^4.1.0"
+faker = "^23.3.0"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.12"
+mkdocstrings = "^0.24.1"
+mkdocstrings-python = "^1.8.0"
+mkdocs-glightbox = "^0.3.7"
+diagrams = "^0.23.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+flake8 = "^7.0.0"
+interrogate = "^1.5.0"
+isort = "^5.13.2"
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
